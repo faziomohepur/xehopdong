@@ -19,7 +19,6 @@
   --radius: 16px;
   --radius-sm: 10px;
   --container: 1180px;
-	--container-pill: 1180px;
   --font: 'Be Vietnam Pro', 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
@@ -33,18 +32,18 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-img { max-width: 100%; display: block; }
+img { display: block; }
 a { color: inherit; text-decoration: none; }
 ul { margin: 0; padding: 0; }
-h1, h2, h3, h4 { margin-top: 0 auto; line-height: 1.2; font-weight: 700; }
+ h2, h3, h4 { margin-top: 0 auto; line-height: 1.2; font-weight: 800; }
 p { margin: 0 0 5em; color: var(--ink-700); }
 svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 
 .container {
   width: 100%;
   max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 24px;
+  margin:0  auto;
+  padding:0 24px; 
 }
 
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
@@ -53,11 +52,12 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 .btn {
   display: inline-flex;  /* hoặc flex / block */
   align-items: center;
-  gap: 8px;
-  padding: 9px 18px;
+  gap: 9px;
+  padding: 6px 22px;
   border-radius: 999px;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 13px;
+  bold: 2px;
   border: 2px solid transparent;
   cursor: pointer;
   transition: transform .15s ease, box-shadow .15s ease, background .2s ease;
@@ -89,7 +89,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 10px;
   height: 76px;
 }
 .brand { display: flex; align-items: center; gap: 5px; }
@@ -99,7 +99,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   width: 45px;
   height: 40px;
   border-radius: 12px;
-  background: /* linear-gradient(135deg, var(--green-500), var(--green-800)); */
+  background: linear-gradient(135deg, var(--green-500), var(--green-800));
   color: #fff;
   font-weight: 800;
   font-size: 16px;
@@ -110,7 +110,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 .brand__text strong { font-size: 16px; color: var(--green-900); letter-spacing: .3px; }
 .brand__text small { font-size: 12px; color: var(--ink-500); letter-spacing: 1.5px; }
 
-.main-nav { display: flex; align-items: center; gap: 28px; }
+.main-nav { display: flex; align-items: center; gap: 18px; }
 .main-nav a { font-weight: 500; font-size: 15px; color: var(--ink-700); transition: color .15s; }
 .main-nav a:hover { color: var(--green-700); }
 
@@ -119,7 +119,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   display: none;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  gap: 15px;
   width: 40px;
   height: 40px;
   border: 1px solid var(--border);
@@ -132,7 +132,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 /* ===== Hero ===== */
 .hero {
   position: relative;
-  min-height: 640px;
+  min-height: 280;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -206,12 +206,11 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   background: var(--green-100);
   padding: 6px 14px;
   border-radius: 999px;
-  margin-bottom: 14px;
+  margin-bottom: -10px;
 }
 .eyebrow--light { background: rgba(255,255,255,.15); color: #fff; }
-.section-head h2 { font-size: clamp(24px, 3.5vw, 34px); color: var(--green-900); }
+.section-head h2 { font-size: clamp(24px, 3.5vw, 28px); color: var(--green-900); }
 .section-head p { font-size: 16px; }
-
 .grid { display: grid; gap: 24px; }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
 
@@ -405,7 +404,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   box-shadow: 0 -4px 16px rgba(0,0,0,.08);
   padding: 10px 12px;
   padding-bottom: calc(10px + env(safe-area-inset-bottom));
-	justify-content: center;
+  justify-content: center;
   align-items: center;
 }
 .mobile-callbar__btn {
@@ -479,7 +478,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   border-radius: 999px;
   background: inherit;
   z-index: -1;
-  animation: ripple-call 0.7s infinite;
+  animation: ripple-call 1.5s infinite;
 }
 @keyframes ripple-call {
   0% { transform: scale(1); opacity: 0.6; }
@@ -522,46 +521,23 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 .icon-tiktok { background: #000000; }
 .icon-zalo { background: #0068FF; font-weight: 900; font-family: sans-serif; }
 
-.btn-tetle {
-  position: relative;
-  display: inline-flex;
-  overflow: visible;
-  isolation: isolate;
-  animation: none;
-}
 
-.btn-tetle::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 999px;
-  background: inherit;
-  z-index: -2;
-  animation: ripple-call 0.7s infinite;
-}
-
-
-.img-nav { 
-	display: inline-flex;
-	width: 300px;
-	background-position: left;
-}
-/* //* * ===== Header tối giản: chỉ giữ nút Menu ===== */
-/* .site-header .header-inner {
+ /* ===== Header tối giản: chỉ giữ nút Menu ===== */
+.site-header .header-inner {
   position: relative;
   justify-content: flex-end;
-} */
-/* .site-header .nav-toggle {
+}
+.site-header .nav-toggle {
   display: flex;
   flex-shrink: 0;
   margin-left: auto;
   color: var(--green-900);
   border-color: var(--gold);
   background: #fff;
-} */ */
-.site-header .main-nav {
+} 
+/* .site-header .main-nav {
   display: none;
-}
+} */
 .site-header .main-nav.is-open {
   display: flex;
   flex-direction: column;
@@ -594,4 +570,20 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
     left: auto;
   }
 }
- */
+
+	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap%27');
+
+	.taxi-title {
+	  font-family: 'Playfair Display', Georgia, serif;
+	  font-size: clamp(28px, 6vw, 52px);
+	  font-weight: 600;
+	  text-align: center;
+	  background: linear-gradient(
+		135deg, #a86d18, #fff2b3,
+		#e5ac38, #fff0a0
+	  );
+	  background-clip: text;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  filter: drop-shadow(0 2px 3px #0005);
+	}
