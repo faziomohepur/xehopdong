@@ -8,6 +8,10 @@
     "start": "wrangler dev"
   },
   "devDependencies": {
+    "@types/node": "^26.6.6",
     "wrangler": "^4.152.0"
+  },
+  "dependencies": {
+    "@cloudflare/config": "^0.30.2"
   }
 }
