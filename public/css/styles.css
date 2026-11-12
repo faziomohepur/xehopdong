@@ -146,16 +146,16 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 }
 .hero__content { position: relative; z-index: 1; padding: 80px 24px 96px; max-width: 760px; }
 .pill {
-  display: inline-flex;
-  padding: 7px 16px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.14);
-  border: 1px solid rgba(255,255,255,.25);
-  font-size: 13px;
-  font-weight: 600;
+	display: inline-flex;
+	padding: 7px 16px;
+	border-radius: 999px;
+	background: rgba(255,255,255,.14);
+	border: 1px solid rgba(255,255,255,.25);
+	font-size: 13px;
+	font-weight: 600;
+	margin-bottom: 20px;
 	align-items: center;
 	text-align: center;
-  margin-bottom: 20px;
 	max-width: 100%;
 }
 .hero h1 {
@@ -294,7 +294,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 /* Fleet / about */
 .fleet__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .fleet__images { position: relative; }
-.fleet__img--main { border-radius: 999px;  box-shadow: var(--shadow-lg); max-width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+.fleet__img--main { border-radius: var(--radius); box-shadow: var(--shadow-lg); max-width: 100%; aspect-ratio: 1/1; object-fit: cover; }
 .fleet__img--sub {
   position: absolute;
   bottom: -28px;

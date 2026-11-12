@@ -59,7 +59,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       e.preventDefault();
     }
   });
-<!-- End Anti Copy Source -->
+         /* End Anti Copy Source  */
 
 // FIXED: Hiển thị tên khách và mã đơn từ URL ?ten=&booking_id=
   (function(){

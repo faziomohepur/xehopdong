@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taxidienrachgia.id.vn/sitemap.xml
+Sitemap: https://taxidienrachgia.id.vn/
+Sitemap: https://taxidienrachgia.id.vn/taxi-rach-soi.html
